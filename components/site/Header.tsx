@@ -8,17 +8,17 @@ export default function Header() {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <a href="/" className="flex items-center gap-3">
-            <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-neutral-200 bg-white">
+            <div className="relative h-14 w-44 overflow-hidden rounded-xl border border-neutral-200 bg-white">
               <Image
-                src="/solarsuite_logo.jpg"
-                alt="SolarSuite logo"
+                src="/solara_logo.png"
+                alt="Solara logo"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-semibold">SolarSuite</div>
+              <div className="text-sm font-semibold">Solara</div>
               <div className="text-xs text-neutral-500">Simulazione FV & Business Case — Italia</div>
             </div>
           </a>

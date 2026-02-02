@@ -23,7 +23,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-4 text-lg text-neutral-600">
-              SolarSuite è pensato per il mercato italiano: simulazione energetica oraria, incentivi e analisi finanziaria in un unico flusso,
+              Solara è pensato per il mercato italiano: simulazione energetica oraria, incentivi e analisi finanziaria in un unico flusso,
               dal dimensionamento al report pronto per cliente e investitore.
             </p>
 

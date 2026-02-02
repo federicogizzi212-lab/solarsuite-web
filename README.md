@@ -1,4 +1,4 @@
-# SolarSuite Web (Next.js)
+# Solara Web (Next.js)
 
 ## Requisiti
 - Node.js 18+ (consigliato 20)

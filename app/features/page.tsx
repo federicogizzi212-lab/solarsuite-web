@@ -16,7 +16,7 @@ export default function FeaturesPage() {
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Funzionalità</h1>
           <p className="mt-3 max-w-2xl text-neutral-600">
-            SolarSuite è progettato per professionisti in Italia: simulazione, incentivi e finanza in un flusso unico.
+            Solara è progettato per professionisti in Italia: simulazione, incentivi e finanza in un flusso unico.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">

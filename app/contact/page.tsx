@@ -17,10 +17,10 @@ export default function ContactPage() {
     const role = String(form.get("role") || "");
     const message = String(form.get("message") || "");
 
-    const subject = encodeURIComponent("Richiesta demo SolarSuite");
+    const subject = encodeURIComponent("Richiesta demo Solara");
     const body = encodeURIComponent(
       [
-        "Ciao, vorrei richiedere una demo di SolarSuite.",
+        "Ciao, vorrei richiedere una demo di Solara.",
         "",
         `Nome: ${name}`,
         `Email: ${email}`,
@@ -30,7 +30,7 @@ export default function ContactPage() {
         "Messaggio:",
         message,
         "",
-        "(Inviato dal sito SolarSuite)",
+        "(Inviato dal sito Solara)",
       ].join("\n")
     );
 

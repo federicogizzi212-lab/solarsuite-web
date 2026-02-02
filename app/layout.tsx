@@ -4,9 +4,9 @@ import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
 
 export const metadata: Metadata = {
-  title: "SolarSuite — Simulazione FV & Business Case (Italia)",
+  title: "Solara — Simulazione FV & Business Case (Italia)",
   description:
-    "SolarSuite è una piattaforma professionale per il mercato italiano: simulazione energetica oraria, incentivi e KPI finanziari per impianti fotovoltaici. Report pronti per cliente e investitore.",
+    "Solara è una piattaforma professionale per il mercato italiano: simulazione energetica oraria, incentivi e KPI finanziari per impianti fotovoltaici. Report pronti per cliente e investitore.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
