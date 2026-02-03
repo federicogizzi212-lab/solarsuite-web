@@ -5,16 +5,22 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--bg)]/70 backdrop-blur">
+    <header className="border-b border-[var(--border)] bg-[var(--panel)]"> 
       <Container>
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             {/* Logo (più grande e senza cornice) */}
-            <div className="relative h-12 w-48 overflow-hidden">
-              <Image src="/solara-logo.png" alt="Solara" fill className="object-contain" priority />
+            <div className="relative h-12 w-52 md:h-14 md:w-60">
+              <Image 
+                src="/solara-logo.png" 
+                alt="Solara" 
+                fill 
+                className="object-contain" 
+                priority 
+              />
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-semibold">Solara</div>
+              <div className="text-base font-semibold tracking-tight">Solara</div>
               <div className="text-xs text-[var(--muted)]">Simulazione FV & Business Case — Italia</div>
             </div>
           </Link>
@@ -27,7 +33,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="/pricing" variant="secondary">Vedi prezzi</Button>
             <Button href="/contact" variant="primary">Richiedi demo</Button>
           </div>
         </div>
