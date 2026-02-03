@@ -7,13 +7,17 @@ function Card({
   return (
     <div className={[
       "rounded-3xl border p-6 shadow-sm",
-      highlighted ? "border-neutral-900 bg-neutral-900 text-white" : "border-neutral-200 bg-white",
+      highlighted 
+        ? "border-neutral-900 bg-neutral-900 text-white" 
+        : "border-[var(--border)] bg-[var(--panel)] text-[var(--text)]"
     ].join(" ")}>
       <div className="flex items-center justify-between">
         <div className="text-sm font-semibold">{name}</div>
         <span className={[
           "rounded-full px-3 py-1 text-xs font-medium",
-          highlighted ? "bg-white/10 text-white" : "bg-neutral-50 text-neutral-700 border border-neutral-200",
+          highlighted 
+            ? "bg-white/10 text-white"
+            : "bg-[var(--panel2)] text-[var(--muted)] border border-[var(--border)]"
         ].join(" ")}>
           {note}
         </span>
@@ -25,7 +29,9 @@ function Card({
       <div className="mt-8">
         <a href="/contact" className={[
           "inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition",
-          highlighted ? "bg-white text-neutral-900 hover:bg-neutral-100" : "bg-neutral-900 text-white hover:bg-neutral-800",
+          highlighted
+            ? "bg-white text-neutral-900 hover:bg-neutral-100"
+            : "bg-white/10 text-white hover:bg-white/15 border border-[var(--border)]"
         ].join(" ")}>
           Richiedi demo
         </a>
@@ -36,7 +42,7 @@ function Card({
 
 export default function PricingPage() {
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--bg)] text-[var(--text)]">
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Prezzi</h1>

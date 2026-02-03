@@ -11,7 +11,7 @@ export default function FeaturesPage() {
   ];
 
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--bg)] text-[var(--text)]">
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Funzionalità</h1>

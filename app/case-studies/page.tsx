@@ -10,7 +10,7 @@ export default function CaseStudiesPage() {
   ];
 
   return (
-    <main className="bg-white">
+    <main className="bg-[var(--bg)] text-[var(--text)]">
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Casi studio</h1>
