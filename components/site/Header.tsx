@@ -10,7 +10,7 @@ export default function Header() {
           <a href="/" className="flex items-center gap-3">
             <div className="relative h-14 w-44 overflow-hidden rounded-xl border border-neutral-200 bg-white">
               <Image
-                src="/solara_logo.png"
+                src="/solara-logo.png"
                 alt="Solara logo"
                 fill
                 className="object-contain"
