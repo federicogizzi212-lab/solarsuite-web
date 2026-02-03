@@ -11,7 +11,8 @@
 }
 /* Smooth typography defaults */
 html, body {
-  background. VER(--BG);
+  background: var(--bg);
+  color: var(--text);
   height: 100%;
 }
 
