@@ -8,7 +8,7 @@ function Card({
     <div className={[
       "rounded-3xl border p-6 shadow-sm",
       highlighted 
-        ? "border-neutral-900 bg-neutral-900 text-white" 
+        ? "border-[var(--border)] bg-[var(--panel)] text-[var(--text)]"
         : "border-[var(--border)] bg-[var(--panel)] text-[var(--text)]"
     ].join(" ")}>
       <div className="flex items-center justify-between">
