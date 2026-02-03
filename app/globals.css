@@ -1,5 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  /* Premium dark (charcoal) */
+  color-scheme: dark;
 
-:root { color-scheme: light; }
+  --bg: #0b0d10;      /* page background */
+  --panel: #111418;   /* cards */
+  --panel2: #0f1216;  /* subtle sections */
+  --border: #1f242b;  /* borders */
+  --text: #f4f5f7;    /* primary text */
+  --muted: #a6adbb;   /* secondary text */
+}
+
+/* Smooth typography defaults */
+html, body {
+  height: 100%;
+}
+

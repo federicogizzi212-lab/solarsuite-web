@@ -1,33 +1,29 @@
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--bg)]/70 backdrop-blur">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <a href="/" className="flex items-center gap-3">
-            <div className="relative h-14 w-44 overflow-hidden rounded-xl border border-neutral-200 bg-white">
-              <Image
-                src="/solara-logo.png"
-                alt="Solara logo"
-                fill
-                className="object-contain"
-                priority
-              />
+          <Link href="/" className="flex items-center gap-3">
+            {/* Logo (più grande e senza cornice) */}
+            <div className="relative h-12 w-48 overflow-hidden">
+              <Image src="/solara-logo.png" alt="Solara" fill className="object-contain" priority />
             </div>
             <div className="leading-tight">
               <div className="text-sm font-semibold">Solara</div>
-              <div className="text-xs text-neutral-500">Simulazione FV & Business Case — Italia</div>
+              <div className="text-xs text-[var(--muted)]">Simulazione FV & Business Case — Italia</div>
             </div>
-          </a>
+          </Link>
 
-          <nav className="hidden items-center gap-6 text-sm text-neutral-700 md:flex">
-            <a href="/features" className="hover:text-neutral-900">Funzionalità</a>
-            <a href="/case-studies" className="hover:text-neutral-900">Casi studio</a>
-            <a href="/pricing" className="hover:text-neutral-900">Prezzi</a>
-            <a href="/contact" className="hover:text-neutral-900">Contatti</a>
+          <nav className="hidden items-center gap-6 text-sm text-[var(--muted)] md:flex">
+            <a href="/features" className="hover:text-[var(--text)]">Funzionalità</a>
+            <a href="/case-studies" className="hover:text-[var(--text)]">Casi studio</a>
+            <a href="/pricing" className="hover:text-[var(--text)]">Prezzi</a>
+            <a href="/contact" className="hover:text-[var(--text)]">Contatti</a>
           </nav>
 
           <div className="flex items-center gap-2">

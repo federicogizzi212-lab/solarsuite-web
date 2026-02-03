@@ -1,3 +1,14 @@
-import { Hero, PricingTeaser } from "@/components/sections/HomeSections";
+import { Hero, WhoItsFor, HowItWorks, WhatYouGet, PricingTeaser, FAQ } from "@/components/sections/HomeSections";
 
-export default function Home() { return (<main><Hero /><PricingTeaser /></main>); }
+export default function Page() {
+  return (
+    <>
+      <Hero />
+      <WhoItsFor />
+      <HowItWorks />
+      <WhatYouGet />
+      <PricingTeaser />
+      <FAQ />
+    </>
+  );
+}
