@@ -1,18 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  --bg: #0b0f14;        /* base scura */
-  --panel: #0f1620;     /* card */
-  --panel2: #0c121b;    /* sezioni alternate */
-  --border: rgba(255,255,255,0.08);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.65);
-}
-/* Smooth typography defaults */
-html, body {
-  background: var(--bg);
-  color: var(--text);
-  height: 100%;
+
+/* Solara — Dark premium tokens */
+:root {
+  color-scheme: dark;
+
+  --bg: #0b0f14;
+  --panel: #0f1620;
+  --panel2: #0c121a;
+
+  --text: #f5f7fa;
+  --muted: #a3acb9;
+
+  --border: rgba(255, 255, 255, 0.12);
+  --border2: rgba(255, 255, 255, 0.18);
+
+  --shadow: rgba(0, 0, 0, 0.45);
 }
 
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  min-height: 100%;
+}
+
+/* Optional: migliora leggibilità input/select in dark */
+input,
+select,
+textarea {
+  color: var(--text);
+}
