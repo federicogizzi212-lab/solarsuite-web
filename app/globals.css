@@ -1,20 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-  /* Premium dark (charcoal) */
-  color-scheme: dark;
-
-  --bg: #0b0d10;      /* page background */
-  --panel: #111418;   /* cards */
-  --panel2: #0f1216;  /* subtle sections */
-  --border: #1f242b;  /* borders */
-  --text: #f4f5f7;    /* primary text */
-  --muted: #a6adbb;   /* secondary text */
+:root{
+  --bg: #0b0f14;        /* base scura */
+  --panel: #0f1620;     /* card */
+  --panel2: #0c121b;    /* sezioni alternate */
+  --border: rgba(255,255,255,0.08);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.65);
 }
-
 /* Smooth typography defaults */
 html, body {
+  background. VER(--BG);
   height: 100%;
 }
 
