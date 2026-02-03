@@ -12,7 +12,8 @@ export default function Button({
   const styles =
     variant === "primary"
       ? "bg-neutral-900 text-white hover:bg-neutral-800 focus:ring-neutral-900"
-      : "border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 focus:ring-neutral-300";
+      : "border border-[var(--border)] bg-white/10 text-white hover:bg-white/15 focus:ring-white/20";
+
   return (
     <a href={href} className={`${base} ${styles}`}>
       {children}

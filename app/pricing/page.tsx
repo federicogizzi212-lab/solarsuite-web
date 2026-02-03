@@ -23,14 +23,14 @@ function Card({
         </span>
       </div>
       <div className="mt-4 text-3xl font-semibold">{price}</div>
-      <ul className={highlighted ? "mt-6 space-y-2 text-sm text-white/90" : "mt-6 space-y-2 text-sm text-neutral-700"}>
+      <ul className={highlighted ? "mt-6 space-y-2 text-sm text-white/90" : "mt-6 space-y-2 text-sm text-[var(--muted)]"}>
         {items.map((x) => <li key={x}>• {x}</li>)}
       </ul>
       <div className="mt-8">
         <a href="/contact" className={[
           "inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition",
           highlighted
-            ? "bg-white text-neutral-900 hover:bg-neutral-100"
+            ? "bg-white/15 text-white hover:bg-white/20 border border-white/20"
             : "bg-white/10 text-white hover:bg-white/15 border border-[var(--border)]"
         ].join(" ")}>
           Richiedi demo
@@ -46,7 +46,7 @@ export default function PricingPage() {
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Prezzi</h1>
-          <p className="mt-3 max-w-2xl text-neutral-600">
+          <p className="mt-3 max-w-2xl text-[var(--muted)]">
             Piani B2B per professionisti e team in Italia.
           </p>
 

@@ -15,7 +15,7 @@ export default function FeaturesPage() {
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Funzionalità</h1>
-          <p className="mt-3 max-w-2xl text-neutral-600">
+          <p className="mt-3 max-w-2xl text-[var(--muted)]">
             Solara è progettato per professionisti in Italia: simulazione, incentivi e finanza in un flusso unico.
           </p>
 
@@ -23,7 +23,7 @@ export default function FeaturesPage() {
             {blocks.map((b) => (
               <Card key={b.title}>
                 <div className="text-sm font-semibold">{b.title}</div>
-                <p className="mt-2 text-sm text-neutral-600">{b.desc}</p>
+                <p className="mt-2 text-sm text-[var(--muted)]">{b.desc}</p>
               </Card>
             ))}
           </div>

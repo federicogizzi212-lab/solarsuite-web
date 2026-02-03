@@ -14,16 +14,16 @@ export default function CaseStudiesPage() {
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Casi studio</h1>
-          <p className="mt-3 max-w-2xl text-neutral-600">
+          <p className="mt-3 max-w-2xl text-[var(--muted)]">
             Esempi (placeholder). Quando vuoi, li sostituiamo con casi reali anonimizzati.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {items.map((x) => (
-              <Card key={x.title} className="bg-neutral-50">
+              <Card key={x.title}>
                 <div className="text-sm font-semibold">{x.title}</div>
-                <p className="mt-2 text-sm text-neutral-600">{x.desc}</p>
-                <div className="mt-4 text-xs text-neutral-500">
+                <p className="mt-2 text-sm text-[var(--muted)]">{x.desc}</p>
+                <div className="mt-4 text-xs text-[var(--muted)]">
                   Output: report Excel/PDF · KPI finanziari · scenario comparativo
                 </div>
               </Card>

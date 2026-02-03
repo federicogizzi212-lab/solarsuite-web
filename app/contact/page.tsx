@@ -44,13 +44,13 @@ export default function ContactPage() {
       <Container>
         <div className="py-16">
           <h1 className="text-4xl font-semibold tracking-tight">Richiedi demo</h1>
-          <p className="mt-3 max-w-2xl text-neutral-600">
+          <p className="mt-3 max-w-2xl text-[var(--muted)]">
             Compila il modulo: si aprirà la tua app email con il testo già pronto da inviare.
             (È la soluzione più semplice finché sei in fase demo.)
           </p>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <Card className="bg-neutral-50">
+            <Card>
               <div className="text-sm font-semibold">Modulo</div>
 
               <form className="mt-6 grid gap-3" onSubmit={onSubmit}>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 </button>
 
                 {sent && (
-                  <p className="text-sm text-neutral-700">✅ Perfetto. Se l’email non si è aperta, riprova o scrivici direttamente.</p>
+                  <p className="text-sm text-[var(--muted)]">✅ Perfetto. Se l’email non si è aperta, riprova o scrivici direttamente.</p>
                 )}
 
                 <p className="text-xs text-neutral-500">
@@ -81,7 +81,7 @@ export default function ContactPage() {
 
             <Card>
               <div className="text-sm font-semibold">Cosa serve per una demo efficace</div>
-              <ul className="mt-3 space-y-2 text-sm text-neutral-700">
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
                 <li>• Consumo annuo o profilo (anche stimato)</li>
                 <li>• Località e vincoli (tetto/area/orientamento)</li>
                 <li>• Obiettivo: autoconsumo, ROI, riduzione bolletta</li>
