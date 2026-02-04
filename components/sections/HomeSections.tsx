@@ -36,7 +36,7 @@ export function Hero() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/contact" variant="primary">Richiedi demo</Button>
-              <Button href="/features" variant="secondary">Vedi le funzionalità</Button>
+              <Button href="/features" variant="primary">Vedi le funzionalità</Button>
             </div>
 
             <p className="mt-4 text-xs text-[var(--muted)]">
