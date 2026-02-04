@@ -5,36 +5,19 @@ function Card({
   name, price, note, items, highlighted,
 }: { name: string; price: string; note: string; items: string[]; highlighted?: boolean; }) {
   return (
-    <div className={[
-      "rounded-3xl border p-6 shadow-sm",
-      highlighted 
-        ? "border-[var(--border)] bg-[var(--panel)] text-[var(--text)]"
-        : "border-[var(--border)] bg-[var(--panel)] text-[var(--text)]"
-    ].join(" ")}>
+    <div className="rounded-3xl border border-[var(--border)] bg-[var(--panel)] p-6 shadow-sm">
       <div className="flex items-center justify-between">
         <div className="text-sm font-semibold">{name}</div>
-        <span className={[
-          "rounded-full px-3 py-1 text-xs font-medium",
-          highlighted 
-            ? "bg-white/10 text-white"
-            : "bg-[var(--panel2)] text-[var(--muted)] border border-[var(--border)]"
-        ].join(" ")}>
+        <span className="rounded-full border border-[var(--border)] bg-[var(--panel2)] px-3 py-1 text-xs font-medium text-[var(--muted)]">
           {note}
         </span>
       </div>
       <div className="mt-4 text-3xl font-semibold">{price}</div>
-      <ul className={highlighted ? "mt-6 space-y-2 text-sm text-white/90" : "mt-6 space-y-2 text-sm text-[var(--muted)]"}>
+      <ul className="mt-6 space-y-2 text-sm text-[var(--muted)]">
         {items.map((x) => <li key={x}>• {x}</li>)}
       </ul>
       <div className="mt-8">
-        <a href="/contact" className={[
-          "inline-flex w-full items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition",
-          highlighted
-            ? "bg-white/15 text-white hover:bg-white/20 border border-white/20"
-            : "bg-white/10 text-white hover:bg-white/15 border border-[var(--border)]"
-        ].join(" ")}>
-          Richiedi demo
-        </a>
+        <Button href="/demo" variant="primary">Richiedi demo</Button>
       </div>
     </div>
   );
@@ -63,7 +46,7 @@ export default function PricingPage() {
           </div>
 
           <div className="mt-10">
-            <Button href="/contact" variant="primary">Richiedi demo</Button>
+            <Button href="/demo" variant="primary">Richiedi demo</Button>
           </div>
         </div>
       </Container>
