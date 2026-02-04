@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Solara — Dark premium tokens */
-:root {
+:root{
   color-scheme: dark;
 
   --bg: #0b0f14;
@@ -13,26 +12,16 @@
   --text: #f5f7fa;
   --muted: #a3acb9;
 
-  --border: rgba(255, 255, 255, 0.12);
-  --border2: rgba(255, 255, 255, 0.18);
-
-  --shadow: rgba(0, 0, 0, 0.45);
+  --border: rgba(255,255,255,.12);
 }
 
-html,
-body {
+html, body{
   height: 100%;
   background: var(--bg);
   color: var(--text);
 }
 
-body {
-  min-height: 100%;
-}
-
-/* Optional: migliora leggibilità input/select in dark */
-input,
-select,
-textarea {
-  color: var(--text);
-}
+a{
+ color: inherit;
+ text-decoration: none;
+ }

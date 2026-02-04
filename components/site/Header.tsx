@@ -33,7 +33,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="/contact" variant="primary">Richiedi demo</Button>
+            <Button href="/demo">Richiedi demo</Button>
           </div>
         </div>
       </Container>

@@ -1,43 +1,62 @@
 import Container from "@/components/ui/Container";
-import Card from "@/components/ui/Card";
+import { Card } from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 
 export default function ContactPage() {
   return (
-    <main>
+    <main className="min-h-[70vh] bg-[var(--bg)] text-[var(--text)]">
       <Container>
-        <div className="py-20 max-w-3xl">
-          <h1 className="text-4xl font-semibold">Contatti</h1>
-          <p className="mt-4 text-[var(--muted)]">
-            Scrivici per informazioni commerciali o partnership.
+        <div className="py-16">
+          <h1 className="text-4xl font-semibold tracking-tight">Contatti</h1>
+          <p className="mt-3 max-w-2xl text-sm text-[var(--muted)]">
+            Scrivici o chiamaci: rispondiamo rapidamente e possiamo fissare una demo sul tuo caso reale.
           </p>
 
-          <div className="mt-10 grid gap-6">
-
-            <Card>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <Card className="p-8">
               <div className="text-sm font-semibold">Email</div>
-              <a
-                href="mailto:info@solara.it"
-                className="mt-2 block text-lg underline"
-              >
-                info@solara.it
-              </a>
+              <p className="mt-2 text-sm text-[var(--muted)]">
+                <a className="underline decoration-white/20 hover:decoration-white/50" href="mailto:federicogizzi212@gmail.com">
+                  federicogizzi212@gmail.com
+                </a>
+              </p>
+
+              <div className="mt-6 text-sm font-semibold">Telefono</div>
+              <p className="mt-2 text-sm text-[var(--muted)]">
+                <a className="underline decoration-white/20 hover:decoration-white/50" href="tel:+39XXXXXXXXXX">
+                  +39 XXXXXXXXXX
+                </a>
+              </p>
+
+              <div className="mt-6 text-sm font-semibold">WhatsApp</div>
+              <p className="mt-2 text-sm text-[var(--muted)]">
+                <a className="underline decoration-white/20 hover:decoration-white/50" href="https://wa.me/39XXXXXXXXXX">
+                  Chat su WhatsApp
+                </a>
+              </p>
+
+              <div className="mt-8">
+                <Button href="/demo" variant="primary">Richiedi demo</Button>
+              </div>
+
+              <p className="mt-4 text-xs text-[var(--muted)]">
+                (Sostituisci XXXXXXXXXX con il tuo numero.)
+              </p>
             </Card>
 
-            <Card>
-              <div className="text-sm font-semibold">Vendite</div>
-              <a
-                href="mailto:sales@solara.it"
-                className="mt-2 block text-lg underline"
-              >
-                sales@solara.it
-              </a>
-            </Card>
+            <Card className="p-8">
+              <div className="text-sm font-semibold">Cosa includere nel messaggio</div>
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                <li>• Taglia impianto e località</li>
+                <li>• Profilo consumi (anche stimato)</li>
+                <li>• Obiettivo: autoconsumo / ROI / riduzione bolletta</li>
+                <li>• Vincoli (tetto/area/orientamento) e incentivi</li>
+              </ul>
 
-            <Card>
-              <div className="text-sm font-semibold">Telefono</div>
-              <div className="mt-2 text-lg">+39 333 0000000</div>
+              <div className="mt-8">
+                <Button href="/features" variant="secondary">Vedi funzionalità</Button>
+              </div>
             </Card>
-
           </div>
         </div>
       </Container>
